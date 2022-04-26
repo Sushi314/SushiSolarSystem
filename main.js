@@ -4,13 +4,10 @@ import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import {DepthFormat} from 'three';
 import { ColorKeyframeTrack } from 'three';
 
-//Global Object proerties
-const normalTexture = new THREE.TextureLoader().load('./assets/images/normal.jpg');
-const controls = new OrbitControls(camera, renderer.domElement);
-const aspectRatio = window.innerWidth / window.innerHeight;
-
 //Builds canvas
 const scene = new THREE.Scene();
+const scene1 = new THREE.Scene();
+const aspectRatio = window.innerWidth / window.innerHeight;
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
 });
@@ -39,6 +36,10 @@ moveCamera();
 //Background
 const space = new THREE.TextureLoader().load('./assets/images/Stars.jpg');
 scene.background = space;
+
+//Global Object proerties
+const normalTexture = new THREE.TextureLoader().load('./assets/images/normal.jpg');
+const controls = new OrbitControls(camera, renderer.domElement);
 
 //Build Sun
 const sunTexture = new THREE.TextureLoader().load('./assets/images/sun.jpg');
