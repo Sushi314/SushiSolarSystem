@@ -4,10 +4,13 @@ import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import {DepthFormat} from 'three';
 import { ColorKeyframeTrack } from 'three';
 
+//Global Object proerties
+const normalTexture = new THREE.TextureLoader().load('./assets/images/normal.jpg');
+const controls = new OrbitControls(camera, renderer.domElement);
+const aspectRatio = window.innerWidth / window.innerHeight;
+
 //Builds canvas
 const scene = new THREE.Scene();
-const scene1 = new THREE.Scene();
-const aspectRatio = window.innerWidth / window.innerHeight;
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
 });
@@ -36,10 +39,6 @@ moveCamera();
 //Background
 const space = new THREE.TextureLoader().load('./assets/images/Stars.jpg');
 scene.background = space;
-
-//Global Object proerties
-const normalTexture = new THREE.TextureLoader().load('./assets/images/normal.jpg');
-const controls = new OrbitControls(camera, renderer.domElement);
 
 //Build Sun
 const sunTexture = new THREE.TextureLoader().load('./assets/images/sun.jpg');
@@ -78,14 +77,12 @@ earth.add(moonObj);
 moonObj.add(moon);
 moon.position.set(100, 0, 0);
 
-
 //Lighting
 const pointLight = new THREE.PointLight(0xffffff, 10, 1500, 2);
 const ambientLight = new THREE.AmbientLight(0xffffff, .001);
 const lightHelper = new THREE.PointLightHelper(pointLight);
 const gridHelper = new THREE.GridHelper(500, 50);
 pointLight.position.set(0, 0, 0);
-
 
 //Add Stars(Array(Number of stars))
 function addStar() {
@@ -104,9 +101,6 @@ Array(2000).fill().forEach(addStar);
 //Add the objects to scene
 
 scene.add(pointLight, earthObj, sun,  /*ambientLight, lightHelper*/);
-
-
-
 
 //animates scene
 function animate() {
