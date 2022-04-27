@@ -1,6 +1,6 @@
 :root {
-  --dark-bg: rgba(33, 31, 40, 0.639);
-  --spacing: 350px;
+  --dark-bg: rgba(31, 26, 49, 0.639);
+  --spacing: 500px;
 
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
@@ -11,9 +11,9 @@
 main {
   position: absolute;
   width: 100vw;
-  color: rgb(164, 158, 193, 0.639);
+  color: rgba(182, 168, 254, 0.639);
   z-index: 99;
-  width: 100%;
+  width: auto;
   margin: 0px auto;
   padding: 120 0px;
   display: grid;
@@ -45,7 +45,7 @@ canvas {
     padding: 1rem;
     background: var(--dark-bg);
     font-size: 1.25rem;
-    line-height: 1.5;
+    line-height: 1.1;
     margin-bottom: var(--spacing);
     border-radius: 20px;
   }
@@ -57,12 +57,13 @@ canvas {
   }
   blockquote p {
     color:rgba(50, 44, 65, 0.945);
-    background-color: rgb(223, 211, 255, 0.639);
+    background-color: rgba(182, 168, 254, 0.639);
+    padding: .5rem;
+    padding-left: 2rem;
     font-size: 4rem;
-    display: inline;
+    display: box;
     line-height: 1.2;
-    border-radius: 20px;
-    
+    border-radius: 20px;    
   }
   .left {
     grid-column: 6 / 12;

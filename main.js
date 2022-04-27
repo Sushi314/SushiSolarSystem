@@ -51,7 +51,7 @@ scene.background = space;
 
 //Build Sun
 const sun = new THREE.Mesh(
-  new THREE.SphereGeometry(150, 50, 50, 25),
+  new THREE.SphereGeometry(150, 40, 40),
   new THREE.MeshBasicMaterial({
     map: sunTexture,
   })
@@ -60,7 +60,7 @@ sun.position.set(200, 0, 500);
 
 //Build earth
 const earth = new THREE.Mesh(
-  new THREE.SphereGeometry(60, 50, 50, 25),
+  new THREE.SphereGeometry(60, 20, 20, 25),
   new THREE.MeshStandardMaterial({
     map: earthTexture,
   })
@@ -85,7 +85,7 @@ moon.position.set(100, 0, 0);
 
 //Add Stars(Array(Number of stars))
 function addStar() {
-  const geometry = new THREE.SphereGeometry(2, 50, 50);
+  const geometry = new THREE.SphereGeometry(3, 5, 5);
   const material = new THREE.MeshStandardMaterial({
     color: 0xfcf4bb,
   });
@@ -99,6 +99,7 @@ Array(600).fill().forEach(addStar);
 
 //Add the objects to scene
 scene.add(pointLight, earthObj, sun);
+
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
