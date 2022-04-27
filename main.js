@@ -3,7 +3,7 @@ import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import {DepthFormat} from 'three';
 import { ColorKeyframeTrack } from 'three';
-import starsUrl from './assets/images/Stars.jpg'
+import starsUrl from './assets/images/stars.jpg'
 import sunUrl from './assets/images/sun.jpg'
 import earthUrl from './assets/images/earth.jpg'
 import moonUrl from './assets/images/moon.jpg'
