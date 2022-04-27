@@ -3,6 +3,11 @@ import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import {DepthFormat} from 'three';
 import { ColorKeyframeTrack } from 'three';
+import starsUrl from './assets/images/Stars.jpg'
+import sunUrl from './assets/images/sun.jpg'
+import earthUrl from './assets/images/earth.jpg'
+import moonUrl from './assets/images/moon.jpg'
+import normalUrl from './assets/images/normal.jpg'
 
 //Builds canvas
 const scene = new THREE.Scene();
@@ -40,11 +45,11 @@ const pointLight = new THREE.PointLight(0xffddbf, 4, 4000, 2);
 pointLight.position.set(200, 0, 500);
 
 //Object textures
-const space = new THREE.TextureLoader().load('./assets/images/Stars.jpg');
-const sunTexture = new THREE.TextureLoader().load('./assets/images/sun.jpg');
-const earthTexture = new THREE.TextureLoader().load('./assets/images/earth.jpg');
-const moonTexture = new THREE.TextureLoader().load('./assets/images/moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('./assets/images/normal.jpg');
+const space = new THREE.TextureLoader().load(starsUrl);
+const sunTexture = new THREE.TextureLoader().load(sunUrl);
+const earthTexture = new THREE.TextureLoader().load(earthUrl);
+const moonTexture = new THREE.TextureLoader().load(moonUrl);
+const normalTexture = new THREE.TextureLoader().load(normalUrl);
 
 //Background
 scene.background = space;
