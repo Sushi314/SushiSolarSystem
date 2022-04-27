@@ -5,7 +5,7 @@ import {DepthFormat} from 'three';
 import { ColorKeyframeTrack } from 'three';
 import starsUrl from './assets/images/space.jpg'
 import sunUrl from './assets/images/sun.jpg'
-import earthUrl from './assets/images/earth.jpg'
+import earthUrl from './assets/images/Earth.jpg'
 import moonUrl from './assets/images/moon.jpg'
 import normalUrl from './assets/images/normal.jpg'
 
