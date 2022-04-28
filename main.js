@@ -1,8 +1,6 @@
 import './assets/css/style.css'
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import {DepthFormat} from 'three';
-import { ColorKeyframeTrack } from 'three';
 import starsUrl from './assets/images/space.jpg'
 import sunUrl from './assets/images/sun.jpg'
 import earthUrl from './assets/images/Earth.jpg'
@@ -20,7 +18,7 @@ const renderer = new THREE.WebGLRenderer({
 //scene.add(grid);
 
 //Camera
-const camera = new THREE.PerspectiveCamera(80, aspectRatio, .001, 3000);
+const camera = new THREE.PerspectiveCamera(80, aspectRatio, .001, 15000);
 const cameraPositions = {
   x: -2000,
   y: -2000,
