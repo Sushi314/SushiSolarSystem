@@ -18,7 +18,7 @@ const renderer = new THREE.WebGLRenderer({
 //scene.add(grid);
 
 //Camera
-const camera = new THREE.PerspectiveCamera(80, aspectRatio, .001, 15000);
+const camera = new THREE.PerspectiveCamera(80, aspectRatio, .001, 30000);
 const cameraPositions = {
   x: -2000,
   y: -2000,
