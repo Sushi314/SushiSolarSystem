@@ -16,10 +16,10 @@ renderer.setPixelRatio(window.devicePixelRatio);
 camera.position.set(150, 200, 1000);
 
 //Background
-const space = new THREE.TextureLoader().load('./assets/images/Stars.jpg');
+const space = new THREE.TextureLoader().load('./assets/images/stars.jpg');
 scene.background = space;
 
-//Global Object proerties
+//Global Object properties
 const normalTexture = new THREE.TextureLoader().load('./assets/images/normal.jpg');
 const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -106,5 +106,3 @@ function animate() {
 };
 
 animate();
-
-//Test
