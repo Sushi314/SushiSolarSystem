@@ -1,5 +1,5 @@
 {
-  "name": "sushi-donut-website",
+  "name": "sushi-resume-website",
   "private": false,
   "version": "0.0.0",
   "scripts": {
@@ -12,5 +12,10 @@
   },
   "dependencies": {
     "three": "^0.139.2"
+  },
+  "author": {
+    "name": "Sasha Petruccell",
+    "email": "Sasha@47service.com",
+    "url": "https://SushiThinks.com//"
   }
 }

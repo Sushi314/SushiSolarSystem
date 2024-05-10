@@ -64,6 +64,7 @@ blockquote {
   grid-column: 2 / span 10;
   margin-bottom: var(--spacing);
 }
+
 blockquote p {
   color: rgba(50, 44, 65, 0.945);
   background-color: rgba(182, 168, 254, 0.639);
@@ -74,6 +75,7 @@ blockquote p {
   line-height: 1.2;
   border-radius: .5em;
 }
+
 .left {
   grid-column: 6 / 12;
 }

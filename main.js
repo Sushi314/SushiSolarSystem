@@ -14,6 +14,8 @@ const aspectRatio = window.innerWidth / window.innerHeight;
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
 });
+
+// Use this if you want to enable a grid overlay that will help with setting camera angles and scene layout.
 //const grid = new THREE.GridHelper(500, 50);
 //scene.add(grid);
 
