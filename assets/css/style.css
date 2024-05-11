@@ -1,6 +1,6 @@
 :root {
   --dark-bg: rgba(31, 26, 49, 0.639);
-  --spacing: 10em;
+  --spacing: 10rem;
 
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
@@ -13,20 +13,9 @@ main {
   color: rgba(182, 168, 254, 0.639);
   z-index: 99;
   width: auto;
-  margin: 0em 5em;
-  padding: 1em 0em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit);
+  margin: 0rem 5rem;
+  padding: 1rem 0rem;
   text-align: center;
-}
-
-h1,
-h2,
-h3,
-blockquote {
-  font-family: elevon, sans-serif;
-  font-weight: 700;
-  font-style: normal;
 }
 
 canvas {
@@ -37,46 +26,45 @@ canvas {
 
 header {
   background: var(--dark-bg);
-  grid-column: auto / span 2;
-  font-size: 2em;
+  flex: auto;
+  font-size: 2rem;
   padding: 2rem;
   margin-bottom: var(--spacing);
-  border-radius: 2em;
+  border-radius: 2rem;
 }
 
 header h1 {
   white-space: nowrap;
 }
 
-section {
-  grid-column: 2 / 8;
+.subheader {
+  margin: 25rem;
   padding: 1rem;
+  margin-bottom: var(--spacing);
+  color: rgba(50, 44, 65, 0.945);
+  background-color: rgba(182, 168, 254, 0.639);
+  font-size: 2rem;
+  line-height: 1.2;
+  border-radius: .5rem;
+}
+
+.dark {
   background: var(--dark-bg);
   font-size: 1.25rem;
   line-height: 1.1;
   margin-bottom: var(--spacing);
-  border-radius: 2em;
+  border-radius: 2rem;
 }
 
-blockquote {
-  margin: 1em;
-  padding: 3em;
-  grid-column: 2 / span 10;
+.light {
+  margin: 25rem;
+  margin-top: 40rem;
   margin-bottom: var(--spacing);
-}
-
-blockquote p {
   color: rgba(50, 44, 65, 0.945);
   background-color: rgba(182, 168, 254, 0.639);
-  padding: 2rem;
-  padding-left: 2rem;
   font-size: 2rem;
-  display: box;
   line-height: 1.2;
-  border-radius: .5em;
+  border-radius: .5rem;
 }
 
-.left {
-  grid-column: 6 / 12;
-}
 
