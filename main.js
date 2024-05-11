@@ -1,4 +1,4 @@
-import './assets/css/style.scss'
+import './assets/sass/style.sass'
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import starsUrl from './assets/images/space.jpg'
