@@ -1,14 +1,19 @@
 \:root
-  --dark-bg:rgba(31, 26, 49, 0.639)
   --spacing:10rem
   font-family: brandon-grotesque, sans-serif
   font-weight: 400
   font-style: normal
 
+=dark
+  background: #1f1a31a3
+  color: #b6a8fea3
+=light
+  color: #1f1a31a3
+  background: #b6a8fea3
+
 main
   position: absolute
   width: 100vw
-  color: rgba(182, 168, 254, 0.639)
   z-index: 99
   width: auto
   margin: 0rem 5rem
@@ -21,7 +26,7 @@ canvas
   left: 0
 
 header
-  background: var(--dark-bg)
+  @include dark
   flex: auto
   font-size: 2rem
   padding: 2rem
@@ -35,14 +40,13 @@ header
   margin: 25rem
   padding: 1rem
   margin-bottom: var(--spacing)
-  color: rgba(50, 44, 65, 0.945)
-  background-color: rgba(182, 168, 254, 0.639)
+  @include dark
   font-size: 2rem
   line-height: 1.2
   border-radius: .5rem
 
 .dark
-  background: var(--dark-bg)
+  @include dark  
   font-size: 1.25rem
   line-height: 1.1
   margin-bottom: var(--spacing)
@@ -52,8 +56,8 @@ header
   margin: 25rem
   margin-top: 40rem
   margin-bottom: var(--spacing)
-  color: rgba(50, 44, 65, 0.945)
-  background-color: rgba(182, 168, 254, 0.639)
+  @include light
+  
   font-size: 2rem
   line-height: 1.2
   border-radius: .5rem
