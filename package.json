@@ -12,5 +12,9 @@
   },
   "dependencies": {
     "three": "^0.139.2"
+  },
+  "author": {
+    "name": "Sasha Petruccelli",
+    "email": "Sasha@47service.com"
   }
 }
