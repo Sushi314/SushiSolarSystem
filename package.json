@@ -8,10 +8,12 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.1",
     "vite": "^5.2.11"
   },
   "dependencies": {
-    "sass": "^1.77.1",
     "three": "^0.139.2"
   },
   "author": {

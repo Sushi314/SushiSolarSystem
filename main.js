@@ -1,4 +1,4 @@
-import './assets/scss/style.scss';
+import './assets/css/index.css';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import starsUrl from './assets/images/space.jpg';
@@ -16,7 +16,7 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 // Use this if you want to enable a grid overlay that will help with setting camera angles and scene layout.
-//const grid = new THREE.GridHelper(500, 50);
+//const grid = new THREE.GridHelper(5000, 500);
 //scene.add(grid);
 
 //Camera

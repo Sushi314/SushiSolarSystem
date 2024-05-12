@@ -57,3 +57,26 @@ h1 {
   line-height: 1.2;
   border-radius: .5rem;
 }
+
+
+//This is an example of how to call the breakpoints
+.responsive-test{
+  @include xs {
+      color: red;
+  }
+  @include sm {
+      color: blue;
+  }
+  @include md {
+      color: green;
+  }
+  @include lg {
+      color: purple;
+  }
+  @include xl {
+      color: orange;
+  }
+  @include breakpoint(1400px) {
+      color: pink;
+  }
+}
