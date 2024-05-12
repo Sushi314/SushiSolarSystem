@@ -1,11 +1,11 @@
-import './assets/sass/style.sass'
+import './assets/scss/style.scss';
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
-import starsUrl from './assets/images/space.jpg'
-import sunUrl from './assets/images/sun.jpg'
-import earthUrl from './assets/images/earth.jpg'
-import moonUrl from './assets/images/moon.jpg'
-import normalUrl from './assets/images/normal.jpg'
+import starsUrl from './assets/images/space.jpg';
+import sunUrl from './assets/images/sun.jpg';
+import earthUrl from './assets/images/earth.jpg';
+import moonUrl from './assets/images/moon.jpg';
+import normalUrl from './assets/images/normal.jpg';
 
 //Builds canvas
 const scene = new THREE.Scene();

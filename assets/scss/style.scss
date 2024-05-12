@@ -1,0 +1,59 @@
+//import breakpoints for responsive layout
+@import 'breakpoints';
+
+@mixin dark {
+  background: #1f1a31a3;
+  color: #b6a8fea3;
+}
+@mixin light {
+  color: #1f1a31a3;
+  background: #b6a8fea3;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+main {
+  position: absolute;
+  width: 100vw;
+  z-index: 99;
+  width: auto;
+  margin: 0rem 5rem;
+  padding: 1rem 0rem;
+  text-align: center;
+}
+header {
+  @include dark;
+  flex: auto;
+  font-size: 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.subheader {
+  @include light;
+  margin: 25rem;
+  padding: 1rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  border-radius: .5rem;
+}
+h1 {
+  white-space: nowrap;
+}
+
+
+.dark {
+  @include dark;
+  font-size: 1.25rem;
+  line-height: 1.1;
+  border-radius: 2rem;
+}
+.light {
+  @include light;
+  margin: 25rem;
+  margin-top: 40rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  border-radius: .5rem;
+}
