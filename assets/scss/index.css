@@ -10,7 +10,8 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main {
@@ -156,4 +157,4 @@ h1 {
   .testing-text-size {
     font-size: 2rem;
   }
-}
+}/*# sourceMappingURL=index.css.map */

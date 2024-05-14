@@ -38,7 +38,6 @@ main {
 header {
   @include dark;
   flex: auto;
-  font-size: 2rem;
   padding: 2rem;
   border-radius: 2rem;
 }
@@ -54,6 +53,24 @@ header {
 
 h1 {
   white-space: nowrap;
+  @include xs {
+    font-size: 1rem;
+  }
+  @include sm {
+    font-size: 1.5rem;
+  }
+  @include md {
+    font-size: 2rem;
+  }
+  @include lg {
+    font-size: 4rem;
+  }
+  @include xl {
+    font-size: 6rem;
+  }
+  @include breakpoint(3840px) {
+    font-size: 8rem;
+  }
 }
 
 
@@ -74,7 +91,7 @@ h1 {
 
 
 //This is an example of how to call the breakpoints
-.responsive-test{
+#responsive-test{
   @include xs {
       color: red;
   }
@@ -90,7 +107,29 @@ h1 {
   @include xl {
       color: orange;
   }
-  @include breakpoint(1400px) {
+  @include breakpoint(3840px) {
       color: pink;
+  }
+}
+
+.testing-text-size {
+  white-space: nowrap;
+  @include xs {
+    font-size: 2rem;
+  }
+  @include sm {
+    font-size: 2rem;
+  }
+  @include md {
+    font-size: 2rem;
+  }
+  @include lg {
+    font-size: 2rem;
+  }
+  @include xl {
+    font-size: 2rem;
+  }
+  @include breakpoint(3840px) {
+    font-size: 2rem;
   }
 }
