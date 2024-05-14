@@ -1,7 +1,6 @@
 import './assets/css/index.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-
 import sunUrl from './assets/images/sun.jpg';
 import earthUrl from './assets/images/earth.jpg';
 import moonUrl from './assets/images/moon.jpg';
@@ -13,6 +12,10 @@ const aspectRatio = window.innerWidth / window.innerHeight;
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector('#bg'),
 });
+
+// Use this if you want to enable a grid overlay that will help with setting camera angles and scene layout.
+//const grid = new THREE.GridHelper(500, 50);
+//scene.add(grid);
 
 //Camera
 const camera = new THREE.PerspectiveCamera(80, aspectRatio, 0.001, 30000);
@@ -132,6 +135,7 @@ function animate() {
   earthObj.rotation.y += 0.002; //Earth speed around Sun
 
   renderer.setPixelRatio(window.devicePixelRatio);
+  controls.update();
   renderer.render(scene, camera);
 }
 
