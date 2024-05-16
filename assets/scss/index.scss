@@ -5,98 +5,161 @@
   background: #1f1a31a3;
   color: #b6a8fea3;
   border-radius: 1.5rem;
-  z-index: 99;
+  z-index: 90;
   margin: auto;
-
 }
 @mixin light {
   color: #1f1a31a3;
   background: #b6a8fea3;
   border-radius: 1.5rem;
-  z-index: 99;
+  z-index: 90;
   margin: auto;
+}
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 canvas {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 main {
   position: absolute;
-  z-index: 99;
-  margin: 1rem;
+  top: 0;
+  left: 0;
+  z-index: 10;
   padding: 1rem;
   text-align: center;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 header {
   @include dark;
-  max-width: 1600px;
-  padding-left: 0%;
+  max-width: 1000px;
+  padding: .5rem;
+  @include center-flex;
+  @include xl {
+    max-width: 1400px;
+  }
+  @include breakpoint(3840px) {
+    max-width: 1800px;
+  }
+  h1 {
+    margin: 0 .5rem;
+    @include xxs {
+      font-size: 1.5rem;
+    }
+    @include xs {
+      font-size: 2rem;
+    }
+    @include sm {
+      font-size: 3rem;
+    }
+    @include md {
+      font-size: 3.5rem;
+    }
+    @include lg {
+      font-size: 3.5rem;
+    }
+    @include xl {
+      font-size: 5rem;
+    }
+    @include breakpoint(3840px) {
+      font-size: 7rem;
+    }
+  }
+  .rocket{
+    @include xxs {
+      font-size: 2.5rem;
+    }
+    @include xs {
+      font-size: 3.25rem;
+    }
+    @include sm {
+      font-size: 4rem;
+    }
+    @include md {
+      font-size: 4.25rem;
+    }
+    @include lg {
+      font-size: 4.5rem;
+    }
+    @include xl {
+      font-size: 6rem;
+    }
+    @include breakpoint(3840px) {
+      font-size: 8rem;
+    }
+    
+  }
+  
 }
+//h1 {
+//  @include xxs {
+//    font-size: 2rem;
+//  }
+//  @include xs {
+//    font-size: 2rem;
+//  }
+//  @include sm {
+//    font-size: 3rem;
+//  }
+//  @include md {
+//    font-size: 3.5rem;
+//  }
+//  @include lg {
+//    font-size: 3.5rem;
+//  }
+//  @include xl {
+//    font-size: 5rem;
+//  }
+//  @include breakpoint(3840px) {
+//    font-size: 6rem;
+//  }
+//}
 
 .dark {
   @include dark;
-  font-size: 1.25rem;
-  line-height: 1.1;
 }
 
 .light {
   @include light;
-  margin: 25%;
-  margin-top: 40rem;
-  font-size: 2rem;
-  line-height: 1.2;
 }
-
-h1 {
-  white-space: nowrap;
-  @include xs {
-    font-size: 1rem;
-  }
-  @include sm {
-    font-size: 1.5rem;
-  }
-  @include md {
-    font-size: 2rem;
-  }
-  @include lg {
-    font-size: 3rem;
-  }
-  @include xl {
-    font-size: 5rem;
-  }
-  @include breakpoint(3840px) {
-    font-size: 6rem;
-  }
-}
-
 
 
 //This is an example of how to call the breakpoints
-#responsive-test{
-  @include xs {
-      color: red;
-  }
-  @include sm {
-      color: blue;
-  }
-  @include md {
-      color: green;
-  }
-  @include lg {
-      color: purple;
-  }
-  @include xl {
-      color: orange;
-  }
-  @include breakpoint(3840px) {
-      color: pink;
-  }
-}
+//#responsive-test{
+//  @include xxs {
+//    color: teal;
+//}
+//  @include xs {
+//      color: red;
+//  }
+//  @include sm {
+//      color: blue;
+//  }
+//  @include md {
+//      color: green;
+//  }
+//  @include lg {
+//      color: purple;
+//  }
+//  @include xl {
+//      color: orange;
+//  }
+//  @include breakpoint(3840px) {
+//      color: pink;
+//  }
+//}
 
 .testing-text-size {
   white-space: nowrap;
