@@ -1,0 +1,20 @@
+@mixin dark {
+    background: #1f1a31a3;
+    color: #b6a8fea3;
+    border-radius: 1.5rem;
+    z-index: 90;
+    margin: auto;
+    }
+@mixin light {
+    color: #1f1a31a3;
+    background: #b6a8fea3;
+    border-radius: 1.5rem;
+    z-index: 90;
+    margin: auto;
+}
+
+@mixin center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
