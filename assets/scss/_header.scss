@@ -1,0 +1,61 @@
+@import 'mixin';
+
+header {
+    @include dark;
+    //max-width: 1000px;
+    padding: .5rem;
+    @include center-flex;
+    @include xl {
+        max-width: 1400px;
+    }
+    @include breakpoint(3840px) {
+        //max-width: 1800px;
+    }
+    h1 {
+        margin: 0 .5rem;
+        @include xxs {
+            font-size: 1.5rem;
+        }
+        @include xs {
+            font-size: 2rem;
+        }
+        @include sm {
+            font-size: 3rem;
+        }
+        @include md {
+            font-size: 3.5rem;
+        }
+        @include lg {
+            font-size: 3.5rem;
+        }
+        @include xl {
+            font-size: 5rem;
+        }
+        @include breakpoint(3840px) {
+            font-size: 7rem;
+        }
+    }
+    .rocket {
+        @include xxs {
+            font-size: 2.5rem;
+        }
+        @include xs {
+            font-size: 3.25rem;
+        }
+        @include sm {
+            font-size: 4rem;
+        }
+        @include md {
+            font-size: 4.25rem;
+        }
+        @include lg {
+            font-size: 4.5rem;
+        }
+        @include xl {
+            font-size: 6rem;
+        }
+        @include breakpoint(3840px) {
+            font-size: 8rem;
+        }
+    }
+}
