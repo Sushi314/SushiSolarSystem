@@ -3,18 +3,20 @@
     color: #b6a8fea3;
     border-radius: 1.5rem;
     z-index: 90;
-    margin: auto;
+    margin: 3em;
+    padding: .4em 5em;
     }
 @mixin light {
     color: #1f1a31a3;
     background: #b6a8fea3;
     border-radius: 1.5rem;
     z-index: 90;
-    margin: auto;
+    margin: 3em;
+    padding: .4em 5em;
 }
 
 @mixin center-flex {
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
 }

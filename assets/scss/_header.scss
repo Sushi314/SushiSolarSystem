@@ -2,14 +2,14 @@
 
 header {
     @include dark;
-    max-width: 1000px;
+    //max-width: 1000px;
     padding: .5rem;
     @include center-flex;
     @include xl {
         max-width: 1400px;
     }
     @include breakpoint(3840px) {
-        max-width: 1800px;
+        //max-width: 1800px;
     }
     h1 {
         margin: 0 .5rem;
