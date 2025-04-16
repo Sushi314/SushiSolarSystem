@@ -1,0 +1,167 @@
+header {
+  background: rgba(31, 26, 49, 0.6392156863);
+  color: rgba(182, 168, 254, 0.6392156863);
+  border-radius: 1.5rem;
+  z-index: 90;
+  margin: 3em;
+  padding: 0.4em 5em;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 2570px) {
+  header {
+    max-width: 1400px;
+  }
+}
+header h1 {
+  margin: 0 0.5rem;
+}
+@media (min-width: 0px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 520px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 720px) {
+  header h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1080px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 1440px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 2570px) {
+  header h1 {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 3840px) {
+  header h1 {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 0px) {
+  header .rocket {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 520px) {
+  header .rocket {
+    font-size: 3.25rem;
+  }
+}
+@media (min-width: 720px) {
+  header .rocket {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1080px) {
+  header .rocket {
+    font-size: 4.25rem;
+  }
+}
+@media (min-width: 1440px) {
+  header .rocket {
+    font-size: 4.5rem;
+  }
+}
+@media (min-width: 2570px) {
+  header .rocket {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 3840px) {
+  header .rocket {
+    font-size: 8rem;
+  }
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+}
+
+main {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+  padding: 5em;
+  box-sizing: content-box;
+  min-height: 5000px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dark {
+  background: rgba(31, 26, 49, 0.6392156863);
+  color: rgba(182, 168, 254, 0.6392156863);
+  border-radius: 1.5rem;
+  z-index: 90;
+  margin: 3em;
+  padding: 0.4em 5em;
+}
+
+.light {
+  color: rgba(31, 26, 49, 0.6392156863);
+  background: rgba(182, 168, 254, 0.6392156863);
+  border-radius: 1.5rem;
+  z-index: 90;
+  margin: 3em;
+  padding: 0.4em 5em;
+}
+
+.testing-text-size {
+  white-space: nowrap;
+}
+@media (min-width: 520px) {
+  .testing-text-size {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 720px) {
+  .testing-text-size {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1080px) {
+  .testing-text-size {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  .testing-text-size {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 2570px) {
+  .testing-text-size {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 3840px) {
+  .testing-text-size {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=index.css.map */
